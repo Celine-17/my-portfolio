@@ -403,9 +403,17 @@ footer p:nth-child(1) {
     padding: 10%;
     justify-content: right;
   }
+  .newsletter form {
+    width: 280px;
+    max-width: 100%;
+  }
 
   .content {
     left: 5%;
+  }
+  h1 {
+    margin: 10px 0px 10px;
+    font-size: 50px;
   }
 
   .about img {
