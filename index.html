@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Portfolio Website</title>
     <link href="style.css" rel="stylesheet" />
     <link
@@ -14,14 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Latest Font Awesome CDN -->
   </head>
   <body>
     <!-- header section -->
-    <div class="header">
+    <header class="header">
       <nav>
         <h2 class="logo">C.E.O</h2>
-        <ul>
+        <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle" />
+        <label for="hamburger-toggle" class="hamburger">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul id="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#service">Services</a></li>
@@ -33,7 +39,6 @@
         <h4>👋 Hello, my name is</h4>
         <h1>Chibueze <span>Esther</span></h1>
         <h3>I am a Web Developer</h3>
-        <h4></h4>
         <div class="newsletter">
           <form>
             <input
@@ -46,20 +51,20 @@
           </form>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- About -->
     <section class="about" id="about-me">
       <div class="info">
         <img
-          src="images\WhatsApp Image 2024-09-27 at 14.34.27_c7078ff6.jpg"
+          src="images/WhatsApp Image 2024-09-27 at 14.34.27_c7078ff6.jpg"
           alt="About Image"
         />
         <div class="about-text">
           <h2>About Me</h2>
           <h5>Developer <span>& Designer</span></h5>
           <p>
-            I am a Junior Front-end Web Developer.My passion is working on the
+            I am a Junior Front-end Web Developer. My passion is working on the
             User Interface and User experience (UI/UX) of a website. I excel at
             crafting high-quality UI web applications and precisely replicating
             given designs. I also provide clean code and pixel-perfect design. I
@@ -73,7 +78,7 @@
     </section>
 
     <!-- Services -->
-    <div class="services" id="service">
+    <section class="services" id="service">
       <div class="title">
         <h2>My Services</h2>
       </div>
@@ -121,13 +126,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Contact -->
-    <div class="contact" id="contact-me">
+    <section class="contact" id="contact-me">
       <p>"Let Me Build You a Beautiful Website 🤗"</p>
       <a class="second-button" href="#">Hire Me</a>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -137,8 +142,8 @@
         next frontend project
       </p>
       <p>
-        Ps:I'm currently open for jobs, to work as a team mate for your projects
-        and internships.
+        Ps: I'm currently open for jobs, to work as a team mate for your
+        projects and internships.
       </p>
       <div class="socials">
         <a href="#"><i class="fab fa-facebook"></i></a>
